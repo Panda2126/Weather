@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Dashboard</h1>
+        
+        <div class="search-container">
+            <input type="text" id="location-input" placeholder="Enter a city name">
+            <button id="search-btn">Search</button>
+            <button id="save-location-btn">Save Location</button>
+        </div>
+        
+        <div class="weather-container">
+            <div id="current-weather" class="weather-card">
+                <h2>Current Weather</h2>
+                <div id="weather-info">
+                    <p>Search for a location to see weather information</p>
+                </div>
+            </div>
+            
+            <div id="forecast" class="forecast-container">
+                <h2>5-Day Forecast</h2>
+                <div id="forecast-cards"></div>
+            </div>
+        </div>
+        
+        <div class="saved-locations">
+            <h2>Saved Locations</h2>
+            <ul id="saved-locations-list"></ul>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html> 
